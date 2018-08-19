@@ -26,9 +26,7 @@ main_build_sel_model_for_washington_post.py
 
 # AWS Batch
 
-To run on signal batch servers, from
-/Users/dsluis/PycharmProjects/TX-Jupiter-Notebooks/UCL_COMPGB99
-run
+To run on signal batch servers, from root directory run
 signal-experiment deploy -s . -m 12288 -c "/bin/bash ./run_on_signal.sh 1 1"
 
 To start an instance and drop to the comand shell
@@ -53,11 +51,9 @@ docker ps -aq --no-trunc -f status=created | xargs docker rm
 To edit docker image
 vi Dockerfile
 
-x_To copy files into the correct places for the docker image
-./refresh.sh
-
-
-from /Users/dsluis/PycharmProjects/TX-Jupiter-Notebooks/UCL_COMPGB99
+To copy files into the correct places for the docker image, run
+./copy_files_here.sh
+from project root/files_for_docker
 
 
 # washington post
