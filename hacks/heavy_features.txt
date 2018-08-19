@@ -1,0 +1,55 @@
+
+
+ 	  &  & Feature          				& Impl	& Description                                              \\ \hline
+1  	  &  & Graph Size 					& Y & Number of entities in the undirected graph \\
+2  	  &  & Graph Diameter  				& Y &  A measure of graph size \\
+3  	  &  & Node Degree 					& Y &  Degree of a given entity in the undirected graph \\
+4.1   &  & Node average in degree 		& Y &  \\
+4.2   &  & Node median in degree 		& Y &  \\
+5.1   &  & Node average out degree 		& Y &  \\
+5.2   &  & Node median out degree 		& Y &  \\
+6.1   &  & Node average in-out degree 	& Y &  \\
+6.2   &  & Node median in-out degree 	& Y &  \\
+7     &  & Farness 						& Y & Sum of the shortest paths between node (entity) and all other nodes XXXXXXXX YYYYYYY  GGGGGGG HHHH\\
+8     &  & Closeness 					& Y & 1/ farness \\
+9	  &  & eigan vector centrality 		& Y &  A measure of influence of a node in a network \\
+10	  &  & Random Walk 					&   &  Probability of a random walker being at the node \\
+11 	  &  & Personalised Random Walk 		&   &  Same as random walk, but weighted by entity frequency in document \\
+12 	  &  & Graph Cliques 				&   &  Number of cliques in the graph \\
+13 	  &  & Cross Clique Centrality 		&   &  A measure of connectivity of a node in the graph \\
+14 	  &  & TAGME like voting scheme 		&   &  \\ \hline
+15    &  & Graph Size 				& Y & Number of entities in the undirected graph \\
+16    &  & Graph Diameter  			& Y &  A measure of graph size \\
+17    &  & Node Degree 				& Y &  Degree of a given entity in the undirected graph \\
+18.1  &  & Node average in degree 		& Y &  \\
+18.2  &  & Node median in degree 		& Y &  \\
+19.1  &  & Node average out degree 	& Y &  \\
+19.2  &  & Node median out degree 		& Y &  \\
+20.1  &  & Node average in-out degree 	& Y &  \\
+20.2  &  & Node median in-out degree 	& Y &  \\
+21    &  & Farness 					& Y & Sum of the shortest paths between node (entity) and all other nodes \\
+22    &  & Closeness 					& Y & 1/ farness \\
+23	  &  & eigan vector centrality 		& Y &  A measure of influence of a node in a network \\
+24	  &  & Random Walk 					&   &  Probability of a random walker being at the node \\
+25 	  &  & Personalised Random Walk 		&   &  Same as random walk, but weighted by entity frequency in document \\
+26 	  &  & Graph Cliques 				&   &  Number of cliques in the graph \\
+27 	  &  & Cross Clique Centrality 		&   &  A measure of connectivity of a node in the graph \\
+28 	  &  & TAGME like voting scheme 		&   &  \\ \hline
+29    &  & Graph Size 				&   & Number of entities in the undirected graph \\
+30    &  & Graph Diameter  			&   &  A measure of graph size \\
+31    &  & Node Degree 				&   &  Degree of a given entity in the undirected graph \\
+32.1  &  & Node average in degree 		&   &  \\
+32.2  &  & Node median in degree 		&   &  \\
+33.1  &  & Node average out degree 	&   &  \\
+33.2  &  & Node median out degree 		&   &  \\
+34.1  &  & Node average in-out degree 	&   &  \\
+34.2  &  & Node median in-out degree 	&   &  \\
+35    &  & Farness 						&   & Sum of the shortest paths between node (entity) and all other nodes \\
+36    &  & Closeness 					&   & 1/ farness \\
+37	  &  & eigan vector centrality 		&   &  A measure of influence of a node in a network \\
+38	  &  & Random Walk 					&   &  Probability of a random walker being at the node \\
+39 	  &  & Personalised Random Walk 		&   &  Same as random walk, but weighted by entity frequency in document \\
+40 	  &  & Graph Cliques 				&   &  Number of cliques in the graph \\
+41 	  &  & Cross Clique Centrality 		&   &  A measure of connectivity of a node in the graph \\
+42 	  &  &TAGME like voting scheme 		&   &  \\ \hline
+

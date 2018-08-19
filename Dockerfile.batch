@@ -1,0 +1,40 @@
+FROM quay.io/signal/signalml-base:latest
+ARG SRC=src
+RUN mkdir /root/experiments
+RUN mkdir /root/experiments/Dropbox
+RUN mkdir /root/experiments/Dropbox/Datasets
+RUN mkdir /root/experiments/Dropbox/Datasets/dexter
+RUN mkdir /root/experiments/Dropbox/Datasets/wikipedia
+RUN mkdir /root/experiments/Dropbox/Datasets/intermediate
+RUN mkdir /root/experiments/tmp
+
+COPY ./files_for_docker/saliency-dataset.json /root/experiments/Dropbox/Datasets/dexter/saliency-dataset.json
+COPY ./files_for_docker/wikititle_by_id.pickle  /root/experiments/Dropbox/Datasets/wikipedia/wikititle_by_id.pickle
+COPY ./files_for_docker/wikititle_id_by_id.case_insensitive.15910478.pickle      /root/experiments/Dropbox/Datasets/wikipedia/wikititle_id_by_id.case_insensitive.15910478.pickle
+COPY ./files_for_docker/wikipedia_link_graph_sparse.deduped.15910478.pickle      /root/experiments/Dropbox/Datasets/wikipedia/wikipedia_link_graph_sparse.deduped.15910478.pickle
+COPY ./files_for_docker/wikipedia_link_graph_sparse_csc.deduped.15910478.pickle      /root/experiments/Dropbox/Datasets/wikipedia/wikipedia_link_graph_sparse_csc.deduped.15910478.pickle
+COPY ./files_for_docker/wikipedia_link_graph_sparse_csr.deduped.15910478.pickle      /root/experiments/Dropbox/Datasets/wikipedia/wikipedia_link_graph_sparse_csr.deduped.15910478.pickle
+COPY ./files_for_docker/wikipedia_link_graph_sparse_csc.deduped.15910478.pickle      /root/experiments/Dropbox/Datasets/wikipedia/wikipedia_link_graph_sparse_csc.deduped.15910478.pickle
+
+RUN mkdir /root/.aws
+COPY ./files_for_docker/config      /root/.aws/config
+COPY ./files_for_docker/credentials      /root/.aws/credentials
+
+RUN pip install networkx
+RUN pip install tabulate
+RUN pip install sklearn
+RUN export PYTHONPATH=/root/experiments
+
+COPY $SRC /root/experiments
+WORKDIR /root/experiments
+
+RUN chmod +x ./run_on_signal.sh
+
+
+RUN mkdir /root/experiments/Dropbox/Datasets/washingtonpost
+COPY ./files_for_docker/washington_post.json      /root/experiments/Dropbox/Datasets/washingtonpost/washington_post.json
+
+
+CMD ["/bin/bash", "./run_on_signal.sh"]
+
+

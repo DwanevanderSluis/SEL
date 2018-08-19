@@ -1,0 +1,36 @@
+random
+
+num_q                 	all	176
+num_ret               	all	2301
+num_rel               	all	642
+num_rel_ret           	all	637
+map                   	all	0.4283
+gm_map                	all	0.3772
+Rprec                 	all	0.3054
+bpref                 	all	0.2571
+recip_rank            	all	0.5351
+iprec_at_recall_0.00  	all	0.5908
+iprec_at_recall_0.10  	all	0.5908
+iprec_at_recall_0.20  	all	0.5824
+iprec_at_recall_0.30  	all	0.5189
+iprec_at_recall_0.40  	all	0.4712
+iprec_at_recall_0.50  	all	0.4572
+iprec_at_recall_0.60  	all	0.4175
+iprec_at_recall_0.70  	all	0.4082
+iprec_at_recall_0.80  	all	0.3645
+iprec_at_recall_0.90  	all	0.3475
+iprec_at_recall_1.00  	all	0.3475
+P_5                   	all	0.3000
+P_10                  	all	0.2926
+P_15                  	all	0.2295
+P_20                  	all	0.1798
+P_30                  	all	0.1206
+P_100                 	all	0.0362
+P_200                 	all	0.0181
+P_500                 	all	0.0072
+P_1000                	all	0.0036
+ndcg                  	all	0.6069
+P_1                   	all	0.3182
+P_2                   	all	0.3239
+P_3                   	all	0.3030
+P_4                   	all	0.3026
